@@ -35,5 +35,7 @@ Your function should return true if it successfully transferred ownership of the
 
 **Tip:** This plugin provides the function UFCOE\Ownership\Plugin::changeRiverCreator() to help you change river `create` items if you need to do so.
 
+**Tip:** Don't forget to *change the container_guid to the new owner* if the object is not in a group.
+
 Now register for the hook named `ufcoe_ownership:get_transfer_func`, with `type:subtype` as the hook type. In the handler, return a callback to your transfer function.
 
